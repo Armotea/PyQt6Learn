@@ -2,6 +2,8 @@ import sys
 
 from PyQt6.QtGui import QFont
 from PyQt6.QtWidgets import QApplication, QWidget, QMainWindow, QPushButton, QLabel, QVBoxLayout
+from  PyQt6 import QtGui
+
 app = QApplication(sys.argv)
 class MainWindow(QWidget):
     def __init__(self):
@@ -9,6 +11,7 @@ class MainWindow(QWidget):
 
         self.setGeometry(500, 500, 500, 500)
         self.setWindowTitle("MyApp")
+        self.setWindowIcon(QtGui.QIcon('img.svg'))
         self.setStyleSheet('background-color: #FFF0F5; text-align: center')
         layout = QVBoxLayout(self)
 
