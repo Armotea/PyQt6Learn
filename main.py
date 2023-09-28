@@ -36,8 +36,8 @@ class MainWindow(QWidget):
 
     def on_button_click(self):
         self.label.setText('You clicked on the button!')
-        self.label.setStyleSheet('color: #000; margin-left: 140%')
-        self.setStyleSheet('background-color: #fff')
+        self.label.setStyleSheet('color: #A8E4A0; margin-left: 140%')
+        self.setStyleSheet('background-color: #FF9BAA')
 
 window = MainWindow()
 app.exec()
